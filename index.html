@@ -20,24 +20,21 @@
         .badge {
           cursor: pointer;
         }
-      
-
-        h1, h2, h3 {
-          
-        }
+            
     </style>
     <script>
         $(function(){
             $('.badge').click(function(e){
-                location.href = 'https://web.whatsapp.com/send/?phone=593967088557'
+                location.href = 'https://web.whatsapp.com/send?l=en&phone=+593967088557&text=Hola,%20me%20gustó%20la%20' + $(this).html();                
+                
             });
         });
     </script>
   </head>
   <body>
     <div>      
-      <div class="row px-4">
-        &nbsp;<br><h3>Opciones de logo para tu marca:</h1><br><br>
+      <div class="row px-4 pt-4">
+          <h3>Opciones de logo para tu marca:</h3><br><br>
           <div class="row">
             <small class="alert alert-info">Si ninguno se ajusta a tu identidad corporativa envíame la imagen de tu logo para replicarla en .svg</small>
           </div>      
